@@ -1,13 +1,19 @@
 /*:
- # Introduction
- 
- ## Purpose
- 
- The purpose of this assignment is to create an aesthetically pleasing design using repeated visual elements overlaid on a grid.
+ # Sequence and Structure Assignment
  
  ## Goal
  
+ To create an aesthetically pleasing design using repeated visual elements overlaid on a grid.
+ 
  Designs produced should look good on a laptop skin or t-shirt – this means avoiding very fine detail.
+ 
+ ## Purpose
+ 
+ The purpose of this assessment is to develop a beginning understanding of how to:
+ 
+ * make a plan for specific visual output
+ * use programming structures to create the desired output
+ * use appropriate terminology to describe code, and write readable code
  
  ## Deliverables
  
