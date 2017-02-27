@@ -6,5 +6,8 @@
         <page name='Lines'/>
         <page name='Circles'/>
         <page name='Rectangles'/>
+        <page name='Design One'/>
+        <page name='Design Two'/>
+        <page name='Design Three'/>
     </pages>
 </playground>
