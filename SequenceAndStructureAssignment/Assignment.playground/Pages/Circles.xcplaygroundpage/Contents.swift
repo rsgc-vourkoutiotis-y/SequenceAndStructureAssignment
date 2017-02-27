@@ -1,19 +1,13 @@
 /*:
  [Previous](@previous) / [Next](@next)
  
- # Example
+ # Circles
  
- The canvas is 500 by 500 pixels.
+ Here we use random number generation (0 through 25) to determine a circle's size.
  
- It is sub-divided into 10 columns and rows.
+ When you run the playground, it should look something like this (exact form will vary each time):
  
- We can imagine it as a grid, then, of 100 squares.
- 
- When you run the program, it should look like this:
- 
- ![example_grid](example_grid.png "Grid example")
- 
- From this basic form, many possibilities can arise.
+ ![example-circles](example-circles.png "Circles")
  
  ## Note
  
@@ -27,7 +21,7 @@ let canvas = Canvas(width: 500, height: 500)
 
 // Generate a grid
 canvas.drawShapesWithFill = false
-canvas.defaultBorderWidth = 1
+canvas.defaultBorderWidth = 5
 
 // This loop makes a 10 rows of columns
 for x in stride(from: 25, through: 475, by: 50){
@@ -35,9 +29,15 @@ for x in stride(from: 25, through: 475, by: 50){
     // This loop makes a single column, bottom to top
     for y in stride(from: 25, through: 475, by: 50) {
         
-        // Draw the shapes
-        canvas.drawEllipse(centreX: x, centreY: y, width: 2, height: 2)
-        canvas.drawRectangle(centreX: x, centreY: y, width: 50, height: 50)
+        // Get some entropy (a random number, 0 through 25, but never 26)
+        let expansion = random(from: 0, toButNotIncluding: 26)
+        
+        // Set the diameter of the circle
+        let diameter = 25 + expansion
+        
+        // Draw the circle
+        canvas.drawEllipse(centreX: x, centreY: y, width: diameter, height: diameter)
+        
     }
 }
 

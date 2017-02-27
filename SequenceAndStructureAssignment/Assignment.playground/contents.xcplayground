@@ -4,5 +4,6 @@
         <page name='Introduction'/>
         <page name='Example'/>
         <page name='Lines'/>
+        <page name='Circles'/>
     </pages>
 </playground>
