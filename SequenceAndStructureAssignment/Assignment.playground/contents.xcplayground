@@ -5,5 +5,6 @@
         <page name='Example'/>
         <page name='Lines'/>
         <page name='Circles'/>
+        <page name='Rectangles'/>
     </pages>
 </playground>
