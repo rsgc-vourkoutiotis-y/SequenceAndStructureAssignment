@@ -25,6 +25,7 @@ let canvas = Canvas(width: 500, height: 500)
 canvas.drawShapesWithFill = false
 canvas.defaultBorderWidth = 1
 
+
 // This loop makes a 10 rows of columns
 for x in stride(from: 25, through: 475, by: 50){
     
