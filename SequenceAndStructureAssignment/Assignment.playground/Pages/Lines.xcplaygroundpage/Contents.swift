@@ -31,7 +31,7 @@ for x in stride(from: 25, through: 475, by: 50){
         
         // Get some entropy (a random number, 0 or 1, but never 2)
         let value = random(from: 0, toButNotIncluding: 2)
-        
+                
         // Use the random value to decide on the direction of a line
         if value == 0 {
             // Draw line that slants up and to the right

@@ -19,8 +19,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		81542FF81E64934F006CE834 /* SequenceAndStructureAssignment */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = SequenceAndStructureAssignment; path = /Users/russellgordon/Repositories/SequenceAndStructureAssignment/build/Debug/SequenceAndStructureAssignment; sourceTree = "<absolute>"; };
 		815430031E649390006CE834 /* Assignment.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Assignment.playground; sourceTree = "<group>"; };
+		815430041E64B805006CE834 /* SequenceAndStructureAssignment */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = SequenceAndStructureAssignment; path = /Users/russellgordon/Repositories/SequenceAndStructureAssignment/build/Debug/SequenceAndStructureAssignment; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +67,7 @@
 			);
 			name = SequenceAndStructureAssignment;
 			productName = SequenceAndStructureAssignment;
-			productReference = 81542FF81E64934F006CE834 /* SequenceAndStructureAssignment */;
+			productReference = 815430041E64B805006CE834 /* SequenceAndStructureAssignment */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -240,6 +240,7 @@
 				815430011E64934F006CE834 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

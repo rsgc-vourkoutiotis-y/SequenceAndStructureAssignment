@@ -31,7 +31,7 @@ canvas.defaultBorderWidth = 1
 
 // This loop makes a 10 rows of columns
 for x in stride(from: 25, through: 475, by: 50){
-    
+
     // This loop makes a single column, bottom to top
     for y in stride(from: 25, through: 475, by: 50) {
         
