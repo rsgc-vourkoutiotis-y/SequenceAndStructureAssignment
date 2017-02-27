@@ -6,10 +6,6 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		81542FFC1E64934F006CE834 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81542FFB1E64934F006CE834 /* main.swift */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		81542FF61E64934F006CE834 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -23,8 +19,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		81542FF81E64934F006CE834 /* SequenceAndStructureAssignment */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SequenceAndStructureAssignment; sourceTree = BUILT_PRODUCTS_DIR; };
-		81542FFB1E64934F006CE834 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		81542FF81E64934F006CE834 /* SequenceAndStructureAssignment */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = SequenceAndStructureAssignment; path = /Users/russellgordon/Repositories/SequenceAndStructureAssignment/build/Debug/SequenceAndStructureAssignment; sourceTree = "<absolute>"; };
+		815430031E649390006CE834 /* Assignment.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Assignment.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,24 +37,16 @@
 		81542FEF1E64934F006CE834 = {
 			isa = PBXGroup;
 			children = (
-				81542FFA1E64934F006CE834 /* SequenceAndStructureAssignment */,
-				81542FF91E64934F006CE834 /* Products */,
+				81542FFA1E64934F006CE834 /* Sequence and Structure */,
 			);
 			sourceTree = "<group>";
 		};
-		81542FF91E64934F006CE834 /* Products */ = {
+		81542FFA1E64934F006CE834 /* Sequence and Structure */ = {
 			isa = PBXGroup;
 			children = (
-				81542FF81E64934F006CE834 /* SequenceAndStructureAssignment */,
+				815430031E649390006CE834 /* Assignment.playground */,
 			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		81542FFA1E64934F006CE834 /* SequenceAndStructureAssignment */ = {
-			isa = PBXGroup;
-			children = (
-				81542FFB1E64934F006CE834 /* main.swift */,
-			);
+			name = "Sequence and Structure";
 			path = SequenceAndStructureAssignment;
 			sourceTree = "<group>";
 		};
@@ -107,7 +95,7 @@
 				en,
 			);
 			mainGroup = 81542FEF1E64934F006CE834;
-			productRefGroup = 81542FF91E64934F006CE834 /* Products */;
+			productRefGroup = 81542FEF1E64934F006CE834;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -121,7 +109,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81542FFC1E64934F006CE834 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
