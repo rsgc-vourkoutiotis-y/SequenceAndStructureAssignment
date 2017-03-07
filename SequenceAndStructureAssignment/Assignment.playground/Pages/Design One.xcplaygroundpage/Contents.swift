@@ -31,127 +31,129 @@ canvas.defaultBorderWidth = 1
 
 // Use an Assignment Variable
 
-var number = random(from: 1, toButNotIncluding: 2)
 
 // Make Loop #1
 // Use Comparison Operator
-if number == 1 {
-    
-    for x in stride(from: 20, through: 500, by: 8) {
-        canvas.drawEllipse(centreX: x, centreY: 490-x, width: 10, height: 30)
+
+for x in stride(from: 20, through: 500, by: 8) {
+    var number = random(from: 0, toButNotIncluding: 2)
+    if number == 1 {
+        canvas.drawEllipse(centreX: x, centreY: x+10, width: 20, height: 30)
+    } else {
+        canvas.drawEllipse(centreX: x, centreY: x-10, width: 10, height: 30)
     }
 }
 
-if number == 1 {
-    
-    for x in stride(from: 20, through: 500, by: 8) {
-        canvas.drawEllipse(centreX: x, centreY: 490-x, width: 12, height: 20)
-    }
-}
-
-if number == 1 {
-    
-    for x in stride(from: 20, through: 500, by: 8) {
-        canvas.drawEllipse(centreX: x, centreY: 490-x, width: 14, height: 10)
-    }
-}
-
-// Make Loop #2
-
-if number == 1 {
-    
-    for x in stride(from: 10, through: 500, by: 8) {
-        canvas.drawEllipse(centreX: x, centreY: 200-x, width: 10, height: 30)
-    }
-}
-
-if number == 1 {
-    
-    for x in stride(from: 10, through: 500, by: 8) {
-        canvas.drawEllipse(centreX: x, centreY: 200-x, width: 12, height: 20)
-    }
-}
-
-if number == 1 {
-    
-    for x in stride(from: 10, through: 500, by: 8) {
-        canvas.drawEllipse(centreX: x, centreY: 200-x, width: 14, height: 10)
-    }
-}
-
-
-// Make Loop #3
-
-
-if number == 1 {
-    
-    for x in stride(from: 15, through: 500, by: 8) {
-        canvas.drawEllipse(centreX: x, centreY: 350-x, width: 10, height: 30)
-    }
-}
-
-if number == 1 {
-    
-    for x in stride(from: 15, through: 500, by: 8) {
-        canvas.drawEllipse(centreX: x, centreY: 350-x, width: 12, height: 20)
-    }
-}
-
-if number == 1 {
-    
-    for x in stride(from: 15, through: 500, by: 8) {
-        canvas.drawEllipse(centreX: x, centreY: 350-x, width: 14, height: 10)
-    }
-}
-
-// Make Loop #4
-
-
-if number == 1 {
-    
-    for x in stride(from: 15, through: 500, by: 8) {
-        canvas.drawEllipse(centreX: 125+x, centreY: 495-x, width: 10, height: 30)
-    }
-}
-
-if number == 1 {
-    
-    for x in stride(from: 15, through: 500, by: 8) {
-        canvas.drawEllipse(centreX: 125+x, centreY: 495-x, width: 12, height: 20)
-    }
-}
-
-if number == 1 {
-    
-    for x in stride(from: 15, through: 500, by: 8) {
-        canvas.drawEllipse(centreX: 125+x, centreY: 495-x, width: 14, height: 10)
-    }
-}
-
-
-// Make Loop #5
-
-
-if number == 1 {
-    
-    for x in stride(from: 15, through: 500, by: 8) {
-        canvas.drawEllipse(centreX: 250+x, centreY: 495-x, width: 10, height: 30)
-    }
-}
-
-if number == 1 {
-    
-    for x in stride(from: 15, through: 500, by: 8) {
-        canvas.drawEllipse(centreX: 250+x, centreY: 495-x, width: 12, height: 20)
-    }
-}
-
-if number == 1 {
-    
-    for x in stride(from: 15, through: 500, by: 8) {
-        canvas.drawEllipse(centreX: 250+x, centreY: 495-x, width: 14, height: 10)
-    }
-}
+//if number == 1 {
+//
+//    for x in stride(from: 20, through: 500, by: 8) {
+//        canvas.drawEllipse(centreX: x, centreY: 490-x, width: 12, height: 20)
+//    }
+//}
+//
+//if number == 1 {
+//
+//    for x in stride(from: 20, through: 500, by: 8) {
+//        canvas.drawEllipse(centreX: x, centreY: 490-x, width: 14, height: 10)
+//    }
+//}
+//
+//// Make Loop #2
+//
+//if number == 1 {
+//
+//    for x in stride(from: 10, through: 500, by: 8) {
+//        canvas.drawEllipse(centreX: x, centreY: 200-x, width: 10, height: 30)
+//    }
+//}
+//
+//if number == 1 {
+//
+//    for x in stride(from: 10, through: 500, by: 8) {
+//        canvas.drawEllipse(centreX: x, centreY: 200-x, width: 12, height: 20)
+//    }
+//}
+//
+//if number == 1 {
+//
+//    for x in stride(from: 10, through: 500, by: 8) {
+//        canvas.drawEllipse(centreX: x, centreY: 200-x, width: 14, height: 10)
+//    }
+//}
+//
+//
+//// Make Loop #3
+//
+//
+//if number == 1 {
+//
+//    for x in stride(from: 15, through: 500, by: 8) {
+//        canvas.drawEllipse(centreX: x, centreY: 350-x, width: 10, height: 30)
+//    }
+//}
+//
+//if number == 1 {
+//
+//    for x in stride(from: 15, through: 500, by: 8) {
+//        canvas.drawEllipse(centreX: x, centreY: 350-x, width: 12, height: 20)
+//    }
+//}
+//
+//if number == 1 {
+//
+//    for x in stride(from: 15, through: 500, by: 8) {
+//        canvas.drawEllipse(centreX: x, centreY: 350-x, width: 14, height: 10)
+//    }
+//}
+//
+//// Make Loop #4
+//
+//
+//if number == 1 {
+//
+//    for x in stride(from: 15, through: 500, by: 8) {
+//        canvas.drawEllipse(centreX: 125+x, centreY: 495-x, width: 10, height: 30)
+//    }
+//}
+//
+//if number == 1 {
+//
+//    for x in stride(from: 15, through: 500, by: 8) {
+//        canvas.drawEllipse(centreX: 125+x, centreY: 495-x, width: 12, height: 20)
+//    }
+//}
+//
+//if number == 1 {
+//
+//    for x in stride(from: 15, through: 500, by: 8) {
+//        canvas.drawEllipse(centreX: 125+x, centreY: 495-x, width: 14, height: 10)
+//    }
+//}
+//
+//
+//// Make Loop #5
+//
+//
+//if number == 1 {
+//
+//    for x in stride(from: 15, through: 500, by: 8) {
+//        canvas.drawEllipse(centreX: 250+x, centreY: 495-x, width: 10, height: 30)
+//    }
+//}
+//
+//if number == 1 {
+//
+//    for x in stride(from: 15, through: 500, by: 8) {
+//        canvas.drawEllipse(centreX: 250+x, centreY: 495-x, width: 12, height: 20)
+//    }
+//}
+//
+//if number == 1 {
+//
+//    for x in stride(from: 15, through: 500, by: 8) {
+//        canvas.drawEllipse(centreX: 250+x, centreY: 495-x, width: 14, height: 10)
+//    }
+//}
 
 
 

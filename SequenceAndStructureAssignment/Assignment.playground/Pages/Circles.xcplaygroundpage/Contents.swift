@@ -21,7 +21,7 @@ let canvas = Canvas(width: 500, height: 500)
 
 // Generate a grid
 canvas.drawShapesWithFill = false
-canvas.defaultBorderWidth = 5
+canvas.defaultBorderWidth = 2
 
 // This loop makes a 10 rows of columns
 for x in stride(from: 25, through: 475, by: 50){
@@ -29,14 +29,12 @@ for x in stride(from: 25, through: 475, by: 50){
     // This loop makes a single column, bottom to top
     for y in stride(from: 25, through: 475, by: 50) {
         
-        // Get some entropy (a random number, 0 through 25, but never 26)
-        let expansion = random(from: 0, toButNotIncluding: 26)
-        
-        // Set the diameter of the circle
-        let diameter = 25 + expansion
+        for diameter in stride(from: 10, through: 50, by: 10 )
+        {
         
         // Draw the circle
         canvas.drawEllipse(centreX: x, centreY: y, width: diameter, height: diameter)
+        }
         
     }
 }
