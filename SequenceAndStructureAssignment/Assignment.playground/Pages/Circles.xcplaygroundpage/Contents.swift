@@ -39,6 +39,48 @@ for x in stride(from: 25, through: 475, by: 50){
     }
 }
 
+// Get some entropy (a random number, 0 through 3, but never 4)
+let value = random(from: 0, toButNotIncluding: 4)
+
+// Set the alpha based on the random value
+canvas.borderColor = Color(hue: 0, saturation: 0, brightness: 0, alpha: 20 + 20 * value)
+
+// Draw square in different position based on random value
+// (Look carefully at arguments for parameters)
+let offset = 10
+if value == 0 { // north
+    canvas.drawEllipse(centreX: x, centreY: y + offset, width: diameter, height: diameter)
+}
+
+} else if value == 1 { // west
+    canvas.drawEllipse(centreX: x + offset, centreY: y, width: diameter, height: diameter)
+}
+} else if value == 2 { // south
+    canvas.drawEllipse(centreX: x, centreY: y - offset, width: diameter, height: diameter)
+}
+} else { // east
+    canvas.drawEllipse(centreX: x - offset, centreY: y, width: diameter, height: diameter)}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*:
  ## Template code
