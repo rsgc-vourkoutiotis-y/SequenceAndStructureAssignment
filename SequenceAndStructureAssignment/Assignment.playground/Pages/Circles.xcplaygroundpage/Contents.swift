@@ -29,6 +29,8 @@ for x in stride(from: 25, through: 475, by: 50){
     // This loop makes a single column, bottom to top
     for y in stride(from: 25, through: 475, by: 50) {
         
+        // Add Sequence
+         var circleNumber = random(from: 1,toButNotIncluding:3)
         
         // Start of the Sequence
         //draw bulls eye
@@ -42,7 +44,7 @@ for x in stride(from: 25, through: 475, by: 50){
             // use an assignment statement
             // use number as a variable
             var number = random(from: 1, toButNotIncluding: 7)
-            var circleNumber = random(from: 1,toButNotIncluding:3)
+           
             
             
             canvas.drawShapesWithBorders = true
@@ -84,9 +86,9 @@ for x in stride(from: 25, through: 475, by: 50){
             // Make the Ellipse
             var offsetX = 0
             if circleNumber == 1 {
-                offsetX = x - 50 + diameter/2
+                offsetX = x - 25 + diameter/2
             } else {
-                offsetX = x + 50 - diameter/2
+                offsetX = x + 25 - diameter/2
                 
             }
             
