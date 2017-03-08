@@ -35,78 +35,56 @@ for x in stride(from: 25, through: 475, by: 50){
         for diameter in stride(from: 10, through: 50, by: 10 )
         {
             
-            // Draw one circle of bulls eye
-            //colour
+                // Draw one circle of bulls eye
+                //colour
+                
+                // Generate a random number
+                // use an assignment statement
+                // use number as a variable
+                var number = random(from: 1, toButNotIncluding: 7)
+                
+                canvas.drawShapesWithBorders = true
+                
+                canvas.drawShapesWithFill = false
+                
+                canvas.defaultBorderWidth = 2
+                
+                
+                //use comparison operator
+                // conditional statement
+                if number == 1 {
+                    // used arithmetic operator for colour
+                    
+                    canvas.borderColor = Color(hue: number * 60, saturation: 100, brightness: 100, alpha: 100)
+                    
+                } else if number == 2 {
+                    
+                    canvas.borderColor = Color(hue: number * 60, saturation: 100, brightness: 100, alpha: 100)
+                    
+                } else if number == 3 {
+                    
+                    canvas.borderColor = Color(hue: number * 60, saturation: 100, brightness: 100, alpha: 100)
+                    
+                } else if number == 4 {
+                    
+                    canvas.borderColor = Color(hue: number * 60, saturation: 100, brightness: 100, alpha: 100)
+                    
+                } else if number == 5 {
+                    
+                    canvas.borderColor = Color(hue: number * 60, saturation: 100, brightness: 100, alpha: 100)
+                    
+                } else if number == 6 {
+                    
+                    canvas.borderColor = Color(hue: number * 60, saturation: 100, brightness: 100, alpha: 100)
+                    
+                }
             
-            // Generate a random number
-            // use an assignment statement
-            // use number as a variable
-            var number = random(from: 1, toButNotIncluding: 7)
+                // Make the Ellipse
+                canvas.drawEllipse(centreX: x - 50 + diameter, centreY: y, width: diameter, height: diameter)
             
-            canvas.drawShapesWithBorders = true
-            
-            canvas.drawShapesWithFill = false
-            
-            canvas.defaultBorderWidth = 2
-            
-            
-            //use comparison operator
-            // conditional statement
-            if number == 1 {
-                // used arithmetic operator for colour
-                
-                canvas.borderColor = Color(hue: number * 60, saturation: 100, brightness: 100, alpha: 100)
-                
-            } else if number == 2 {
-                
-                canvas.borderColor = Color(hue: number * 60, saturation: 100, brightness: 100, alpha: 100)
-                
-            } else if number == 3 {
-                
-                canvas.borderColor = Color(hue: number * 60, saturation: 100, brightness: 100, alpha: 100)
-                
-            } else if number == 4 {
-                
-                canvas.borderColor = Color(hue: number * 60, saturation: 100, brightness: 100, alpha: 100)
-                
-            } else if number == 5 {
-                
-                canvas.borderColor = Color(hue: number * 60, saturation: 100, brightness: 100, alpha: 100)
-                
-            } else if number == 6 {
-                
-                canvas.borderColor = Color(hue: number * 60, saturation: 100, brightness: 100, alpha: 100)
-                
-            }
-            // Make the Ellipse
-            canvas.drawEllipse(centreX: x, centreY: y, width: diameter, height: diameter)
         }
         
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*:
- ## Template code
- The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
- */
 PlaygroundPage.current.liveView = canvas.imageView
