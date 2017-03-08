@@ -30,26 +30,26 @@ for x in stride(from: 25, through: 475, by: 50){
     for y in stride(from: 25, through: 475, by: 50) {
         
         
-    
- //draw bulls eye
+        // Start of the Sequence
+        //draw bulls eye
         for diameter in stride(from: 10, through: 50, by: 10 )
         {
-        
-
             
-// Draw one circle of bulls eye
-//colour
-   
+            // Draw one circle of bulls eye
+            //colour
+            
             // Generate a random number
             // use an assignment statement
             // use number as a variable
             var number = random(from: 1, toButNotIncluding: 7)
+            
             canvas.drawShapesWithBorders = true
             
             canvas.drawShapesWithFill = false
             
             canvas.defaultBorderWidth = 2
-            // make 1 dot
+            
+            
             //use comparison operator
             // conditional statement
             if number == 1 {
@@ -57,39 +57,29 @@ for x in stride(from: 25, through: 475, by: 50){
                 
                 canvas.borderColor = Color(hue: number * 60, saturation: 100, brightness: 100, alpha: 100)
                 
-            }
-            
-            if number == 2 {
+            } else if number == 2 {
+                
+                canvas.borderColor = Color(hue: number * 60, saturation: 100, brightness: 100, alpha: 100)
+                
+            } else if number == 3 {
+                
+                canvas.borderColor = Color(hue: number * 60, saturation: 100, brightness: 100, alpha: 100)
+                
+            } else if number == 4 {
+                
+                canvas.borderColor = Color(hue: number * 60, saturation: 100, brightness: 100, alpha: 100)
+                
+            } else if number == 5 {
+                
+                canvas.borderColor = Color(hue: number * 60, saturation: 100, brightness: 100, alpha: 100)
+                
+            } else if number == 6 {
                 
                 canvas.borderColor = Color(hue: number * 60, saturation: 100, brightness: 100, alpha: 100)
                 
             }
-            
-            if number == 3 {
-                
-                canvas.borderColor = Color(hue: number * 60, saturation: 100, brightness: 100, alpha: 100)
-                
-            }
-            
-            if number == 4 {
-                
-                canvas.borderColor = Color(hue: number * 60, saturation: 100, brightness: 100, alpha: 100)
-                
-            }
-            
-            if number == 5 {
-                
-                canvas.borderColor = Color(hue: number * 60, saturation: 100, brightness: 100, alpha: 100)
-                
-            }
-            
-            if number == 6 {
-                
-                canvas.borderColor = Color(hue: number * 60, saturation: 100, brightness: 100, alpha: 100)
-                
-            }
-            
-canvas.drawEllipse(centreX: x, centreY: y, width: diameter, height: diameter)
+            // Make the Ellipse
+            canvas.drawEllipse(centreX: x, centreY: y, width: diameter, height: diameter)
         }
         
     }
