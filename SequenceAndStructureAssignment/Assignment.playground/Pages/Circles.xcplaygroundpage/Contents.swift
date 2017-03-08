@@ -80,7 +80,7 @@ for x in stride(from: 25, through: 475, by: 50){
                 }
             
                 // Make the Ellipse
-                canvas.drawEllipse(centreX: x - 50 + diameter, centreY: y, width: diameter, height: diameter)
+                canvas.drawEllipse(centreX: x - 50 + diameter/2, centreY: y, width: diameter, height: diameter)
             
         }
         
